@@ -1,28 +1,23 @@
-package com.bo.controller;
+package com.bo.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
  * @author mq_xu
- * @ClassName LogoutController
- * @Description 注销登录控制
+ * @ClassName LoginPageController
+ * @Description 登录页面跳转控制
  * @Date 2019/9/26
  * @Version 1.0
  **/
-@WebServlet(urlPatterns = "/logout")
-public class LogoutController extends HttpServlet {
+@WebServlet(urlPatterns = "/login")
+public class LoginPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        //让session对象失效
-        session.invalidate();
-        //重定向到/index
-        resp.sendRedirect("/");
+        req.getRequestDispatcher("login.html").forward(req, resp);
     }
 }

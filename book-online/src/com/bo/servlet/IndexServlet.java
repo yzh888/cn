@@ -1,4 +1,4 @@
-package com.bo.controller;
+package com.bo.servlet;
 
 import com.bo.entity.Book;
 import com.bo.service.BookService;
@@ -20,7 +20,7 @@ import java.util.List;
  * @Version 1.0
  **/
 @WebServlet(urlPatterns = "/index")
-public class IndexController extends HttpServlet {
+public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //调用BookService的init方法，产生图书数据集合

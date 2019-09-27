@@ -6,9 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd33024-6ebd-4948-8714-8ec98dd4ff75" name="Default Changelist" comment="book-online模块完成登录、首页、个人中心、书籍详情页面的后台代码和页面代码">
-      <change afterPath="$PROJECT_DIR$/quickstart/src/com/quickstart/http/MockHttp.java" afterDir="false" />
+    <list default="true" id="2dd33024-6ebd-4948-8714-8ec98dd4ff75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/book-online/src/com/bo/listener/ContextLoaderListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/BookDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/BookDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/IndexServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/LoginPageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/controller/UserPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/servlet/UserPageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-online/src/com/bo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-online/src/com/bo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickstart/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/quickstart/web/student.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MockHttp">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.24">
     <configuration name="BookService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bo.service.BookService" />
       <module name="book-online" />
@@ -119,7 +128,7 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="quickstart:war exploded">
+        <artifact name="book-online:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -207,6 +216,7 @@
       <updated>1569501221877</updated>
       <workItem from="1569501226654" duration="13538000" />
       <workItem from="1569590882408" duration="400000" />
+      <workItem from="1569591313713" duration="2607000" />
     </task>
     <task id="LOCAL-00001" summary="web-dev项目初始化两个模块：quickstart和book-online">
       <created>1569502761363</created>
@@ -236,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569515112615</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MockHttp代码补推">
+      <created>1569591423991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569591423991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +277,7 @@
     <MESSAGE value="quickstart模块完成按照用户名和密码进行登录跳转，用session保持用户登录状态" />
     <MESSAGE value="quickstart模块完成服务端转发数据至目标页面渲染——学生信息列表展示功能，并补充本模块的README.md文件" />
     <MESSAGE value="book-online模块完成登录、首页、个人中心、书籍详情页面的后台代码和页面代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="book-online模块完成登录、首页、个人中心、书籍详情页面的后台代码和页面代码" />
+    <MESSAGE value="MockHttp代码补推" />
+    <option name="LAST_COMMIT_MESSAGE" value="MockHttp代码补推" />
   </component>
 </project>

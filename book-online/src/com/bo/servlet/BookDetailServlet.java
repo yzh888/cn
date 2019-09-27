@@ -1,4 +1,4 @@
-package com.bo.controller;
+package com.bo.servlet;
 
 import com.bo.entity.Book;
 
@@ -19,7 +19,7 @@ import java.util.List;
  * @Version 1.0
  **/
 @WebServlet(urlPatterns = "/detail/*")
-public class BookDetailController extends HttpServlet {
+public class BookDetailServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String requestPath = req.getRequestURI().trim();

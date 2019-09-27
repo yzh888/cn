@@ -1,4 +1,4 @@
-package com.bo.controller;
+package com.bo.servlet;
 
 
 import com.bo.entity.User;
@@ -21,7 +21,7 @@ import java.io.PrintWriter;
  * @Version 1.0
  **/
 @WebServlet(urlPatterns = "/login.do")
-public class LoginController extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

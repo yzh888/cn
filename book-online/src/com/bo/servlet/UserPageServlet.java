@@ -1,4 +1,4 @@
-package com.bo.controller;
+package com.bo.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,15 +9,15 @@ import java.io.IOException;
 
 /**
  * @author mq_xu
- * @ClassName LoginPageController
- * @Description 登录页面跳转控制
+ * @ClassName UserPageController
+ * @Description 个人中心页面跳转控制
  * @Date 2019/9/26
  * @Version 1.0
  **/
-@WebServlet(urlPatterns = "/login")
-public class LoginPageController extends HttpServlet {
+@WebServlet(urlPatterns = "/user")
+public class UserPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("login.html").forward(req, resp);
+        req.getRequestDispatcher("user.jsp").forward(req, resp);
     }
 }
