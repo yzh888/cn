@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * @author mq_xu
  * @ClassName LogoutController
- * @Description 注销登录控制
+ * @Description 注销登录
  * @Date 2019/9/26
  * @Version 1.0
  **/
@@ -22,7 +22,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = req.getSession();
         //让session对象失效
         session.invalidate();
-        //重定向到/index
+        //重定向到/index，跳回主页
         resp.sendRedirect("/");
     }
 }

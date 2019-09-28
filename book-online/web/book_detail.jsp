@@ -71,9 +71,11 @@
     Book book = (Book) request.getAttribute("book");
     pageContext.setAttribute("book", book);
 %>
+
 <div id="top">
     <jsp:include page="top.jsp"/>
 </div>
+
 <div id="search">
     <h2>读书时刻</h2>
     <input type="text" placeholder="书名、作者、ISBN" class="search-input">

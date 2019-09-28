@@ -72,6 +72,6 @@ public class ContextLoaderListener implements ServletContextListener {
      */
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-
+        System.out.println("容器销毁");
     }
 }
