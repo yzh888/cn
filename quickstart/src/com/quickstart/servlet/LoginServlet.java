@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         //取得密码参数
         String password = req.getParameter("password");
         //账号密码正确
-        if ("admin".equals(username) && "111".equals(password)) {
+        if ("yzh".equals(username) && "111".equals(password)) {
             //通过request对象获取session会话对象
             HttpSession session = req.getSession();
             //把用户名存入session对象
